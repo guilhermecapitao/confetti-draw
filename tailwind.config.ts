@@ -80,10 +80,67 @@ export default {
             height: "0",
           },
         },
+        "confetti-fall": {
+          "0%": {
+            transform: "translateY(-100vh) rotate(0deg)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(100vh) rotate(360deg)",
+            opacity: "0",
+          },
+        },
+        "winner-pulse": {
+          "0%, 100%": {
+            transform: "scale(1)",
+            boxShadow: "var(--shadow-glow)",
+          },
+          "50%": {
+            transform: "scale(1.02)",
+            boxShadow: "0 0 80px hsl(var(--primary-glow) / 0.5)",
+          },
+        },
+        "bounce-gentle": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-5px)",
+          },
+        },
+        "slide-up": {
+          "0%": {
+            transform: "translateY(20px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+        "reveal-winner": {
+          "0%": {
+            transform: "scale(0.8) rotateY(180deg)",
+            opacity: "0",
+          },
+          "50%": {
+            transform: "scale(1.1) rotateY(90deg)",
+            opacity: "0.5",
+          },
+          "100%": {
+            transform: "scale(1) rotateY(0deg)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "confetti-fall": "confetti-fall 3s linear infinite",
+        "winner-pulse": "winner-pulse 2s ease-in-out infinite",
+        "bounce-gentle": "bounce-gentle 0.6s ease-in-out",
+        "slide-up": "slide-up 0.5s ease-out",
+        "reveal-winner": "reveal-winner 1s ease-out",
       },
     },
   },
